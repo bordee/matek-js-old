@@ -1,0 +1,130 @@
+<div id="challenge_wrapper">
+    <div id="header">
+        <div id="challenge_type"></div>
+        <div id="finish" class="btn-group box_buttons">
+            <div class="box_submit">
+                <button type="button" class="btn btn-warning" tabindex="3">Befejezés</button>
+            </div>
+        </div>
+        <div class="box_submit">
+            <button id="enter" type="button" class="btn btn-warning" tabindex="2">Enter</button>
+        </div>
+    </div>
+    <div id="challenge" class="input-group input-group-lg">
+        <div id="challenge_a" class="input-group-addon challenge-part"></div>
+        <div id="challenge_o" class="input-group-addon challenge-part"></div>
+        <div id="challenge_b" class="input-group-addon challenge-part"></div>
+        <div id="challenge_e" class="input-group-addon challenge-part">=</div>
+        <input id="challenge_x" type="number" class="form-control challenge-part" placeholder="?" tabindex="1"/>
+    </div>
+    <div class="progress">
+        <div id="challenge_progress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+            <span id="challenge_progress_text" class="">100%</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div id="challenge_ratio_bad" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50" style="width: 50%;">
+            <span id="challenge_count_bad_text" class="">0</span>
+            (<span id="challenge_ratio_bad_text" class="">50%</span>)
+        </div>
+        <div id="challenge_ratio_good" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50" style="width: 50%;">
+            <span id="challenge_count_good_text" class="">0</span>
+            (<span id="challenge_ratio_good_text" class="">50%</span>)
+        </div>
+    </div>
+
+    <div id="popup_right" class="result_image popup_hidden">
+        <div><img src="" /></div>
+        <div class="result_text answer_right">Jó válasz!</div>
+    </div>
+    <div id="popup_wrong" class="result_image popup_hidden">
+        <div><img src="" /></div>
+        <div class="result_text answer_wrong">Hibás válasz!</div>
+    </div>
+    <div id="challenge_log">
+        <div id="challenge_log_container">
+            <div>
+                Válaszok:
+            </div>
+            <div class="answers">
+            </div>
+        </div>
+        <div class="toggle">+</div>
+    </div>
+</div>
+
+<div id="result_wrapper">
+    <div id="result"></div>
+    <div class="btn-group-lg box_buttons">
+        <button type="button" class="btn btn-primary">Új feladatsor</button>
+    </div>
+    <div id="challenge_history"></div>
+</div>
+
+<div id="login" class="dialog_box">
+    <div class="box_title">
+        Bejelentkezés
+    </div>
+    <div class="box_input">
+        Név:
+        <input type="text" tabindex="1"/>
+    </div>
+    <div class="box_input">
+        Jelszó:
+        <input type="password" tabindex="2"/>
+    </div>
+    <div class="btn-group box_buttons">
+        <div class="box_submit">
+            <button type="button" class="btn btn-primary" tabindex="3">Ok</button>
+        </div>
+    </div>
+</div>
+
+<div id="challenge_types" class="dialog_box">
+    <div class="box_input">
+        <select tabindex="1"></select>
+    </div>
+    <div class="box_buttons">
+        <div class="box_back">
+            <button type="button" class="btn btn-default" tabindex="3">Vissza</button>
+        </div>
+        <div class="box_submit">
+            <button type="button" class="btn btn-primary" tabindex="2">Ok</button>
+        </div>
+    </div>
+</div>
+
+<div id="challenge_subtypes" class="dialog_box">
+    <div class="box_input"></div>
+    <div class="box_buttons">
+        <div class="box_back">
+            <button type="button" class="btn btn-default" tabindex="3">Vissza</button>
+        </div>
+        <div class="box_submit">
+            <button type="button" class="btn btn-primary" tabindex="2">Ok</button>
+        </div>
+    </div>
+</div>
+
+<div id="challenge_total" class="dialog_box">
+    <div class="box_input">
+        Hány feladatot szeretnél megoldani?
+        <input type="number" tabindex="1" />
+    </div>
+    <div class="box_buttons">
+        <div class="box_back">
+            <button type="button" class="btn btn-default" tabindex="3">Vissza</button>
+        </div>
+        <div class="box_submit">
+            <button type="button" class="btn btn-primary" tabindex="2">Ok</button>
+        </div>
+    </div>
+</div>
+
+<div id="nn_challenge" class="input-group input-group-lg">
+    <input id="challenge_a" type="number" class="form-control challenge-part" placeholder="?" tabindex="1"/>
+    <div id="challenge_o" class="input-group-addon challenge-part"></div>
+    <div id="challenge_b" class="input-group-addon challenge-part"></div>
+    <div id="challenge_e" class="input-group-addon challenge-part">=</div>
+    <input id="challenge_x" type="number" class="form-control challenge-part" placeholder="?" tabindex="1"/>
+</div>

@@ -1,0 +1,250 @@
+body {
+    position: relative;
+}
+
+#enter {
+    display: none;
+}
+
+#challenge {
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+}
+
+#challenge > .challenge-part {
+    max-width: 30%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    height: 150px;
+    background: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: Arial, sans-serif;
+}
+
+#challenge_x {
+    
+}
+
+div.dialog_box {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    min-width: 250px;
+    width: 80%;
+    margin: 0 0 0 -40%;
+    background: #D0D0D0;
+    border: 1px solid black;
+    box-shadow: 5px 5px grey;
+    padding: 5px;
+    z-index: 10;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+         -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+div.dialog_box.box_hidden {
+    left: -100%;
+}
+
+#login {
+    width: 40%;
+    margin: 0 0 0 -20%;
+}
+
+#header {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#challenge_type {
+    display: inline-block;
+    float: left;
+}
+
+#finish {
+    float: right;
+}
+#finish *[type="button"] {
+    width: 100%;
+}
+
+#challenge_types {
+}
+
+#challenge_subtypes {
+}
+
+div.box_title {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+div.box_input {
+    padding: 10px;
+    text-align: center;
+}
+
+div.box_buttons {
+    float: right;
+}
+
+div.box_back {
+    padding: 5px;
+    display: inline-block;
+    float: left;
+}
+
+div.box_submit {
+    padding: 5px;
+    display: inline-block;
+}
+
+div.box_submit button {
+    width: 150px;
+}
+
+div.challenge_subtype_wrapper {
+    display: inline-block;
+    padding: 4px;
+    width: 150px;
+}
+
+#result {
+    margin: 0 0 0 25%;
+    padding: 5px;
+}
+
+.answer_right {
+    color: black;
+    background: white;
+}
+
+.answer_wrong {
+    color: white;
+    background: red;
+}
+
+div.result_image {
+    position: absolute;
+    display: block;
+    width: 50%;
+    top: 5%;
+    left: 25%;
+    margin: 0;
+    text-align: center;
+    opacity: 1;
+    z-index: 1000;
+}
+
+div.result_image img {
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+}
+
+div.result_image.popup_hidden {
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+         -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+}
+
+.result_text {
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#challenge_log  {
+}
+
+#challenge_log div.toggle {
+    position: absolute;
+    display: none;
+    width: 20%;
+    height: 25px;
+    margin-left: 40%;
+    bottom: -25px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #challenge_select {
+        position: fixed;
+        top: 1%;
+        left: 1%;
+        max-width: 98%;
+        max-height: 98%;
+        background: #D0D0D0;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    #challenge_log {
+        position: absolute;
+        bottom: 100%;
+        top: auto;
+        left: 25%;
+        width: 50%;
+        height: 260px;
+        padding-bottom: 25px;
+        background: rgba(0,0,0,0.5);
+        color: white;
+        z-index: 10;
+        -webkit-transition: all 0.5s ease-out;
+           -moz-transition: all 0.5s ease-out;
+            -ms-transition: all 0.5s ease-out;
+             -o-transition: all 0.5s ease-out;
+                transition: all 0.5s ease-out;
+    }
+    
+    #challenge_log_container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #challenge_log > div:first-child {
+        padding: 5px 5px 0 5px;
+    }
+    
+    #challenge_log div.answers {
+        height: 90%;
+        overflow-y: scroll;
+        padding: 5px 5px 0 5px;
+    }
+    
+    #challenge_log div.toggle {
+        display: block;
+    }
+    
+    #challenge_log.active {
+        top: 0;
+        bottom: auto;
+    }
+
+    .result_text {
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+}

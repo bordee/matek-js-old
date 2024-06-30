@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#game_container {
+    position: relative;
+/*    top: 80px;
+    bottom: 15px;*/
+    margin: 0.5% auto;
+    width: 80%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 500;
+}
+
+#challenge_wrapper {
+    position: relative;
+}
+
+input[type="number"] {
+   -webkit-appearance: textfield;
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #game_container {
+        position: relative;
+        /*background-position: top left !important;*/
+        margin: 0 !important;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    #game_container {
+        height: 100%;
+    }
+    
+}
